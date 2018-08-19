@@ -7,6 +7,8 @@ function init() {
 
   function onKeyDownHandler(e) {
     console.log("== onKeyDownHandler ==");
+    console.log("e.which:", e.which);
+    console.log("e.detail:", e.detail);
   }
 
 }
