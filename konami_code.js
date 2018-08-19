@@ -5,10 +5,19 @@ function init() {
 
   document.body.addEventListener('keydown', function() { onKeyDownHandler(event) }, false);
 
+  let index = 0;
+
   function onKeyDownHandler(e) {
     console.log("== onKeyDownHandler ==");
     console.log("e.which:", e.which);
-    console.log("e.detail:", e.detail);
+
+    for (var i = 0; i < code.length; i++) {
+      if (e.which === code[index]) {
+        index++;
+      } else {
+        console.log("NOPE!");
+      }
+    }
   }
 
 }
