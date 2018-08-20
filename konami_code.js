@@ -10,6 +10,7 @@ function init() {
   function onKeyDownHandler(e) {
     console.log("== onKeyDownHandler ==");
     console.log("e.which:", e.which);
+    console.log("e.location:", e.location);
     console.log("index:", index);
     console.log("code[index]:", code[index]);
     // let char = String.fromCharCode(e.which);
