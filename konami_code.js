@@ -10,13 +10,12 @@ function init() {
   function onKeyDownHandler(e) {
     console.log("== onKeyDownHandler ==");
     console.log("e.which:", e.which);
+    console.log("code[index]:", code[index]);
 
-    for (var i = 0; i < code.length; i++) {
-      if (e.which === code[index]) {
-        index++;
-      } else {
-        console.log("NOPE!");
-      }
+    if (e.which === code[index]) {
+      index++;
+    } else {
+      console.log("NOPE!");
     }
   }
 
