@@ -11,6 +11,8 @@ function init() {
     console.log("== onKeyDownHandler ==");
     console.log("e.which:", e.which);
     console.log("code[index]:", code[index]);
+    let char = String.fromCharCode(e.which);
+    console.log("char:", char);
 
     if (e.which === code[index]) {
       index++;
