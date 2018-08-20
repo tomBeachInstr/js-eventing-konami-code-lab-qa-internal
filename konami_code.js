@@ -10,11 +10,13 @@ function init() {
   function onKeyDownHandler(e) {
     console.log("== onKeyDownHandler ==");
     console.log("e.which:", e.which);
+    console.log("index:", index);
     console.log("code[index]:", code[index]);
-    let char = String.fromCharCode(e.which);
-    console.log("char:", char);
+    // let char = String.fromCharCode(e.which);
+    // console.log("char:", char);
 
     if (e.which === code[index]) {
+      console.log("MATCH!");
       index++;
     } else {
       console.log("NOPE!");
