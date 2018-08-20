@@ -20,6 +20,7 @@ function init() {
       index++;
     } else {
       console.log("NOPE!");
+      alert("Missed one... reload and try again.");
     }
     if (index === code.length) {
       alert("You got it!");
