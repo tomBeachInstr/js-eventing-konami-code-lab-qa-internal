@@ -16,7 +16,9 @@ function init() {
     // let char = String.fromCharCode(e.which);
     // console.log("char:", char);
 
-    if (e.which === code[index]) {
+    let key = parseInt(e.which);
+
+    if (key === code[index]) {
       console.log("MATCH!");
       index++;
     } else {
