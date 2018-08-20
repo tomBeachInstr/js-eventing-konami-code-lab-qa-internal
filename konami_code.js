@@ -21,6 +21,9 @@ function init() {
     } else {
       console.log("NOPE!");
     }
+    if (index === code.length) {
+      alert("You got it!");
+    }
   }
 
 }
